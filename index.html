@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>たんぽぽ庵｜長野・北信地区 Airbnb民泊運営代行 — 山崎洋平</title>
-<meta name="description" content="長野市出身の山崎洋平が営む、北信地区のAirbnb民泊運営代行。ホテルニューオータニ仕込みの清掃と、オーストラリアで300件以上を手がけたクリーニング経験。空き家・別荘を、手間ゼロで収益を生む宿に。">
+<title>たんぽぽ庵｜Airbnbリスティング作成（全国）・清掃・運営代行 — 山崎洋平</title>
+<meta name="description" content="Airbnbのリスティング（掲載ページ）を一棟3,980円で作成。タイトル・紹介文（日英）・写真の並べ方まで一式、全国どこの宿でも承ります。ご満足いただけなければ料金は不要。清掃・運営代行は長野市から車で伺える範囲で。ホテルニューオータニ仕込みの清掃と、オーストラリアで300件以上を手がけたクリーニング経験。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -58,12 +58,12 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
 .brand{font-family:"Zen Old Mincho",serif;font-weight:900;font-size:22px;color:var(--green);letter-spacing:.08em}
-.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--green)}
 .nav-cta{background:var(--green);color:var(--white)!important;padding:8px 18px;border-radius:2px;font-size:13px}
 .nav-cta:hover{background:var(--green-deep)}
-@media(max-width:680px){.nav-links{display:none}}
+@media(max-width:760px){.nav-links{display:none}}
 
 /* ===== ヒーロー ===== */
 .hero{
@@ -87,7 +87,8 @@ header{
 .hero h1 span:nth-child(1){animation-delay:.2s}
 .hero h1 span:nth-child(2){animation-delay:.34s}
 .hero h1 span:nth-child(3){animation-delay:.48s}
-.hero-lead{font-size:18px;color:var(--ink-soft);max-width:620px;margin:0 auto 38px;opacity:0;animation:rise .8s .7s forwards}
+.hero-lead{font-size:18px;color:var(--ink-soft);max-width:640px;margin:0 auto 20px;opacity:0;animation:rise .8s .7s forwards}
+.hero-sub{font-size:15px;color:var(--green-soft);max-width:640px;margin:0 auto 34px;opacity:0;animation:rise .8s .8s forwards}
 .hero-cta{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;opacity:0;animation:rise .8s .9s forwards}
 .btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -122,8 +123,53 @@ section{padding:66px 0}
   content:"";display:block;width:46px;height:3px;background:var(--gold);margin-top:16px;border-radius:2px;
 }
 
+/* ===== リスティング作成（新設・主役） ===== */
+.listing{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.listing .lede{font-size:17px;color:var(--ink);max-width:720px;margin-bottom:8px}
+.listing .lede b{color:var(--green)}
+.six-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 26px}
+@media(max-width:760px){.six-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.six-grid{grid-template-columns:1fr}}
+.six{
+  background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--green);
+  border-radius:4px;padding:16px 18px;
+}
+.six .n{
+  font-family:"Zen Old Mincho",serif;font-size:14px;color:var(--gold);
+  font-weight:700;letter-spacing:.05em;
+}
+.six h4{font-size:15px;color:var(--green);font-weight:700;margin-top:1px;line-height:1.5}
+.promise{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px;
+}
+@media(max-width:680px){.promise{grid-template-columns:1fr}}
+.promise div{
+  background:var(--paper-deep);border:1px dashed var(--green-soft);border-radius:4px;
+  padding:14px 16px;font-size:14px;color:var(--ink);line-height:1.7;text-align:center;
+}
+.promise div b{display:block;color:var(--green);font-size:15px;margin-bottom:2px}
+.window{
+  background:var(--paper-deep);border-left:4px solid var(--gold);border-radius:4px;
+  padding:22px 24px;
+}
+.window .w-title{font-family:"Zen Old Mincho",serif;font-size:19px;color:var(--green);font-weight:700;margin-bottom:8px}
+.window p{font-size:15px;color:var(--ink-soft);line-height:1.85}
+
+/* ===== 承っていること（3段階） ===== */
+.scope-list{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.scope-row{
+  display:grid;grid-template-columns:1.3fr .9fr 1.3fr;gap:18px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-radius:5px;padding:20px 24px;
+}
+@media(max-width:760px){.scope-row{grid-template-columns:1fr;gap:5px;padding:18px 20px}}
+.scope-row.now{border-color:var(--green-soft);border-left:4px solid var(--gold);background:var(--paper-deep)}
+.s-name{font-family:"Zen Old Mincho",serif;font-size:19px;color:var(--green);font-weight:700;line-height:1.4}
+.s-price{font-size:16px;color:var(--ink);font-weight:700}
+.s-area{font-size:14px;color:var(--ink-soft);line-height:1.6}
+.scope-note{font-size:14px;color:var(--ink-soft);margin-top:18px;line-height:1.85}
+
 /* ===== ひとこと(リード文) ===== */
-.intro{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.intro{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .intro p{font-size:17px;color:var(--ink);max-width:720px}
 .intro .lead-big{
   font-family:"Zen Old Mincho",serif;font-size:clamp(22px,3vw,28px);
@@ -243,9 +289,9 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
   <nav class="wrap nav">
     <div class="brand">たんぽぽ庵</div>
     <ul class="nav-links">
+      <li><a href="#listing">リスティング作成</a></li>
+      <li><a href="#scope">承っていること</a></li>
       <li><a href="#story">経歴</a></li>
-      <li><a href="#stats">数字で見る</a></li>
-      <li><a href="#service">サービス</a></li>
       <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
     </ul>
   </nav>
@@ -258,14 +304,71 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
   <div class="seed">✺</div>
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <p class="hero-eyebrow">Nagano · Hokushin — Airbnb co-hosting</p>
-      <h1><span>使われていない家を、</span><br><span>もう一度、</span><span class="y">人の集まる場所へ。</span></h1>
-      <p class="hero-lead">長野・北信地区の<span class="nb">Airbnb民泊運営代行</span><span class="nb">「たんぽぽ庵」。</span><span class="nb">空き家や別荘を、</span><span class="nb">オーナー様の手間ゼロで、</span><span class="nb">収益を生む宿に変えます。</span></p>
+      <p class="hero-eyebrow">Airbnb listing, written properly — nationwide</p>
+      <h1><span>Airbnbの紹介文を、</span><br><span class="y">3,980円で。</span></h1>
+      <p class="hero-lead"><span class="nb">タイトルも、</span><span class="nb">日本語も、</span><span class="nb">英語も、</span><span class="nb">写真の並べ方まで。</span><br><span class="nb">全国どこの宿でも</span><span class="nb">承ります。</span><span class="nb">ご満足いただけなければ、</span><span class="nb">料金は不要です。</span></p>
+      <p class="hero-sub"><span class="nb">清掃と運営代行は、</span><span class="nb">長野市から車で伺える範囲で</span><span class="nb">承っています。</span></p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">お問い合わせ →</a>
+        <a href="#listing" class="btn btn-primary">サービスの中身 →</a>
         <a href="#story" class="btn btn-ghost">まず経歴をご覧ください</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- リスティング作成（主役） -->
+<section class="listing" id="listing">
+  <div class="wrap">
+    <span class="eyebrow">Listing</span>
+    <h2 class="sec-title"><span class="nb">リスティング作成</span>　<span class="nb">一棟 3,980円</span>　<span class="nb">全国対応</span></h2>
+    <p class="lede"><span class="nb">「じゃらんには載せている。</span><span class="nb">でもAirbnbはよくわからない」</span><span class="nb">——そういう宿の</span><span class="nb">オーナー様に向けた</span><span class="nb">サービスです。</span></p>
+    <p class="lede"><b><span class="nb">お渡しするのは6点。</span><span class="nb">すべてコピペで使える</span><span class="nb">テキストです。</span></b></p>
+
+    <div class="six-grid">
+      <div class="six reveal"><span class="n">01</span><h4>タイトル案</h4></div>
+      <div class="six reveal"><span class="n">02</span><h4>紹介文（日本語）</h4></div>
+      <div class="six reveal"><span class="n">03</span><h4>紹介文（英語）</h4></div>
+      <div class="six reveal"><span class="n">04</span><h4><span class="nb">写真の</span><span class="nb">並べ方の指示</span></h4></div>
+      <div class="six reveal"><span class="n">05</span><h4><span class="nb">写真の</span><span class="nb">撮り方ガイド</span></h4></div>
+      <div class="six reveal"><span class="n">06</span><h4><span class="nb">英語の</span><span class="nb">ゲスト対応テンプレート</span></h4></div>
+    </div>
+
+    <div class="promise">
+      <div class="reveal"><b>アカウントには触れません</b><span class="nb">パスワードも</span><span class="nb">お預かりしません。</span></div>
+      <div class="reveal"><b>後払いで結構です</b><span class="nb">納品してから、</span><span class="nb">ご判断ください。</span></div>
+      <div class="reveal"><b>満足いただけなければ無料</b><span class="nb">ご判断は、</span><span class="nb">ページを読んでからで</span><span class="nb">大丈夫です。</span></div>
+    </div>
+
+    <div class="window reveal">
+      <div class="w-title"><span class="nb">納品したあとが、</span><span class="nb">本題です。</span></div>
+      <p><span class="nb">Airbnbの操作、</span><span class="nb">許可番号の入力、</span><span class="nb">英語でのゲスト対応、</span><span class="nb">清掃のコツ。</span><span class="nb">私にわかる範囲のことは、</span><b><span class="nb">いつでも無料で</span><span class="nb">ご相談に乗ります。</span><span class="nb">期間の制限はありません。</span></b></p>
+    </div>
+  </div>
+</section>
+
+<!-- 承っていること（3段階） -->
+<section id="scope">
+  <div class="wrap">
+    <span class="eyebrow">Services & area</span>
+    <h2 class="sec-title">承っていること</h2>
+    <div class="scope-list">
+      <div class="scope-row now reveal">
+        <div class="s-name"><span class="nb">リスティング作成</span></div>
+        <div class="s-price">一棟 3,980円</div>
+        <div class="s-area"><b><span class="nb">全国どこの宿でも</span><span class="nb">承ります</span></b></div>
+      </div>
+      <div class="scope-row reveal">
+        <div class="s-name">清掃</div>
+        <div class="s-price"><span class="nb">一日 5,000円〜</span></div>
+        <div class="s-area"><span class="nb">長野市から</span><span class="nb">車で伺える範囲</span></div>
+      </div>
+      <div class="scope-row reveal">
+        <div class="s-name">運営代行</div>
+        <div class="s-price"><span class="nb">手数料 売上の20%のみ</span></div>
+        <div class="s-area"><span class="nb">長野市から</span><span class="nb">車で伺える範囲</span></div>
+      </div>
+    </div>
+    <p class="scope-note"><span class="nb">リスティング作成は、</span><span class="nb">パソコンで完結するため</span><span class="nb">全国どこでも承れます。</span><span class="nb">清掃と運営代行は、</span><span class="nb">私自身が現地に伺うので、</span><span class="nb">距離をいただいています。</span><span class="nb">迷われたら、</span><span class="nb">まずお声がけください。</span></p>
   </div>
 </section>
 
@@ -276,13 +379,13 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
     <p class="lead-big">はじめまして。たんぽぽ庵の山崎洋平（やまざき ようへい）です。</p>
     <p class="tsubame"><span class="nb">幸せを運ぶ鳥にあやかって、</span><span class="nb">どうぞ「ツバメ」と</span><span class="nb">呼んでください。</span><br><span class="nb">ツバメが軒先に巣をつくるように、</span><span class="nb">使われていない家に、</span><span class="nb">また人の温もりを。</span></p>
     <ul class="quick-facts">
-      <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">長野市出身。</span><span class="nb">地元に戻り、</span><span class="nb">北信地区で</span><span class="nb">Airbnb民泊運営代行を</span><span class="nb">しています</span></span></li>
+      <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">長野市出身。</span><span class="nb">地元に戻り、</span><span class="nb">Airbnbのリスティング作成と、</span><span class="nb">宿の清掃・運営代行を</span><span class="nb">しています</span></span></li>
       <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">ホテルニューオータニ（★5）で</span><span class="nb">ハウスキーピングを経験</span></span></li>
       <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">オーストラリアで</span><span class="nb">自営のクリーニング事業を立ち上げ、</span><span class="nb">300件以上を手がけ</span><span class="nb">売却まで完遂</span></span></li>
       <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">50物件以上を運営する</span><span class="nb">高評価スーパーホストのもとで</span><span class="nb">運営ノウハウを習得</span></span></li>
-      <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">英語対応可。</span><span class="nb">空き家・別荘を、</span><span class="nb">手間ゼロで</span><span class="nb">収益を生む宿に変えます</span></span></li>
+      <li><span class="qf-mark"></span><span class="qf-text"><span class="nb">英語対応可。</span><span class="nb">紹介文は翻訳ではなく、</span><span class="nb">はじめから英語で書きます</span></span></li>
     </ul>
-    <p class="intro-close">民泊の運営実績は、<span class="nb">まだこれからです。</span><span class="nb">だからこそ、</span><span class="nb">ごまかしのきかない清掃の質と、</span><span class="nb">学んできた知識で勝負します。</span><span class="nb">まずは、</span><span class="nb">私がどんな人間かを</span><span class="nb">ご覧ください。↓</span></p>
+    <p class="intro-close">宿の運営実績は、<span class="nb">まだこれからです。</span><span class="nb">だからこそ、</span><span class="nb">ごまかしのきかない清掃の質と、</span><span class="nb">学んできた知識で勝負します。</span><span class="nb">まずは、</span><span class="nb">私がどんな人間かを</span><span class="nb">ご覧ください。↓</span></p>
   </div>
 </section>
 
@@ -295,12 +398,12 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
       <div class="card reveal">
         <span class="num">01</span>
         <h3><span class="nb">ホテルの「あたりまえ」を、</span><span class="nb">現場で。</span></h3>
-        <p>ホテルニューオータニ（★5）でハウスキーピングに従事。最高級ホテルが守る清掃と接客の基準を、頭ではなく手で覚えました。民泊で評価が伸びない最大の原因は、清掃の質です。そこを妥協しません。</p>
+        <p>ホテルニューオータニ（★5）でハウスキーピングに従事。最高級ホテルが守る清掃と接客の基準を、頭ではなく手で覚えました。Airbnbで評価が伸びない最大の原因は、清掃の質です。そこを妥協しません。</p>
       </div>
       <div class="card reveal">
         <span class="num">02</span>
         <h3><span class="nb">海外で、</span><span class="nb">ゼロから事業をつくった。</span></h3>
-        <p>オーストラリアで自営のクリーニング事業を立ち上げ、民泊・個人宅から豪邸まで300件以上を手がけました。お客様に強気の品質を約束し、最後はその事業を売却するところまでやり抜きました。「立ち上げて、回して、やり切る」を経験しています。</p>
+        <p>オーストラリアで自営のクリーニング事業を立ち上げ、宿泊施設・個人宅から豪邸まで300件以上を手がけました。お客様に強気の品質を約束し、最後はその事業を売却するところまでやり抜きました。「立ち上げて、回して、やり切る」を経験しています。英語で商売をしてきた人間です。</p>
       </div>
       <div class="card reveal">
         <span class="num">03</span>
@@ -310,7 +413,7 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
       <div class="card reveal">
         <span class="num">04</span>
         <h3><span class="nb">長野の人間として、</span><span class="nb">長く。</span></h3>
-        <p>長野市出身。一度オーストラリアに出て、地元に戻ってきました。北信地区の空き家や別荘が、もう一度人の集まる場所になることに貢献したい。短期の小遣い稼ぎではなく、10年単位で根を張るつもりです。</p>
+        <p>長野市出身。一度オーストラリアに出て、地元に戻ってきました。長野の宿や、使われなくなった家が、もう一度人の集まる場所になることに貢献したい。短期の小遣い稼ぎではなく、10年単位で根を張るつもりです。</p>
       </div>
     </div>
   </div>
@@ -322,9 +425,9 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
     <span class="eyebrow">By the numbers</span>
     <h2 class="sec-title">数字で見る、わたし</h2>
     <div class="stat-grid">
-      <div class="stat reveal"><div class="big">300<span style="font-size:.5em">件+</span></div><div class="lbl">オーストラリアの自営クリーニング事業で手がけた清掃。民泊・個人宅から豪邸まで。</div></div>
+      <div class="stat reveal"><div class="big">300<span style="font-size:.5em">件+</span></div><div class="lbl">オーストラリアの自営クリーニング事業で手がけた清掃。宿泊施設・個人宅から豪邸まで。</div></div>
       <div class="stat reveal"><div class="big">★5</div><div class="lbl">ホテルニューオータニで身につけた、最高級ホテルのハウスキーピング基準。</div></div>
-      <div class="stat reveal"><div class="big">20<span style="font-size:.5em">%</span></div><div class="lbl"><span class="nb">運営代行の手数料は</span><span class="nb">売上の20%のみ。</span><span class="nb">初期費用・月額固定費なし。</span><span class="nb">清掃費は別途、</span><span class="nb">相場より抑えた価格で。</span></div></div>
+      <div class="stat reveal"><div class="big">3,980<span style="font-size:.5em">円</span></div><div class="lbl"><span class="nb">リスティング作成。</span><span class="nb">一棟あたり。</span><span class="nb">全国対応。</span><span class="nb">ご満足いただけなければ</span><span class="nb">料金は不要です。</span></div></div>
     </div>
   </div>
 </section>
@@ -333,7 +436,7 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
 <section id="service">
   <div class="wrap">
     <span class="eyebrow">What I do</span>
-    <h2 class="sec-title">おまかせいただけること</h2>
+    <h2 class="sec-title"><span class="nb">運営代行で</span><span class="nb">おまかせいただけること</span></h2>
     <div class="svc-list">
       <div class="svc reveal"><span class="dot"></span><div><h4>清掃（ホテル品質）</h4><p>外注せず、私自身が責任を持って手を動かします。</p></div></div>
       <div class="svc reveal"><span class="dot"></span><div><h4>リスティング作成・写真改善</h4><p>スーパーホスト仕込みの構成で、ゼロから作り直します。</p></div></div>
@@ -346,7 +449,7 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
       <b><span class="nb">運営代行の手数料は、</span><span class="nb">売上の20%のみ。</span></b>
       <span><span class="nb">初期費用・</span><span class="nb">月額固定費は</span><span class="nb">いただきません。</span></span>
       <span class="price-clean"><span class="nb">清掃費は別途いただきますが、</span><span class="nb">相場より大きく抑えた価格で</span><span class="nb">ご提供します。</span><span class="nb">ホテル品質の清掃を、</span><span class="nb">外注に出すより安く。</span></span>
-      <span style="margin-top:14px"><span class="nb">まずは無料の改善提案から、</span><span class="nb">お気軽にどうぞ。</span></span>
+      <span style="margin-top:14px"><span class="nb">清掃と運営代行は、</span><span class="nb">長野市から車で伺える範囲に</span><span class="nb">限らせていただいています。</span><br><span class="nb">まずは無料の改善提案から、</span><span class="nb">お気軽にどうぞ。</span></span>
     </div>
   </div>
 </section>
@@ -385,7 +488,8 @@ footer .f-meta{font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
     <div class="f-brand">たんぽぽ庵</div>
     <div class="f-tag">—&nbsp;<span class="nb">長野の静かな暮らしに、</span><span class="nb">そっと寄り添う宿を。</span>&nbsp;—</div>
     <div class="f-meta">
-      長野・北信地区 Airbnb民泊運営代行　／　山崎 洋平<br>
+      <span class="nb">Airbnbリスティング作成（全国）</span>　／　<span class="nb">清掃・運営代行（長野市から車で伺える範囲）</span><br>
+      山崎 洋平<br>
       長野県長野市稲里町中氷鉋 1056-2
     </div>
   </div>
