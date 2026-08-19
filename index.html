@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>たんぽぽ庵｜宿の清掃・Airbnb運営代行・リスティング作成 — 山崎洋平</title>
-<meta name="description" content="長野・北信地区の宿の清掃を、ホテルニューオータニ仕込みの品質で。1回のお試しも定期清掃も承ります。あわせてAirbnbのリスティング作成（全国・一棟3,980円）・運営代行も。オーストラリアで300件以上を手がけたクリーニング経験。">
+<meta name="description" content="長野・北信地区の宿の清掃を、ホテルニューオータニ仕込みの品質で。1箇所1回のご依頼も、定期清掃も承ります。浴室・レンジフードの徹底清掃は各12,000円（税込）。あわせてAirbnbのリスティング作成（全国・一棟3,980円）・運営代行も。オーストラリアで300件以上を手がけたクリーニング経験。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
@@ -140,6 +140,59 @@ header{position:sticky;top:0;z-index:50;
   opacity:.05;line-height:1}
 @media(max-width:760px){.two{grid-template-columns:1fr}}
 
+/* ---------- 料金 ---------- */
+.price-sec{position:relative;z-index:1;padding:44px 0 20px}
+.price-lede{text-align:center;font-size:15px;color:var(--ink-soft);
+  max-width:38em;margin:0 auto 36px}
+.price-lede b{color:var(--midori);font-weight:700}
+
+.card--fixed .tag{background:var(--midori);color:#fff}
+.card--quote .tag{background:var(--washi-2);color:var(--midori-deep);
+  border:1px solid var(--line)}
+
+/* 徹底清掃：料金表 */
+.menu{list-style:none;margin:0 0 20px}
+.menu li{display:flex;align-items:baseline;justify-content:space-between;
+  gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.menu li:first-child{border-top:1px dashed var(--line)}
+.menu .m-name{font-size:15px;font-weight:500;color:var(--ink)}
+.menu .m-name small{display:block;font-size:11.5px;color:var(--ink-soft);
+  font-weight:400;letter-spacing:.06em;margin-top:-4px}
+.menu .m-fig{display:flex;align-items:baseline;gap:12px;white-space:nowrap}
+.menu .m-market{font-size:12px;color:#a9a094;text-decoration:line-through;
+  text-decoration-thickness:1px}
+.menu .m-price{font-family:var(--serif);font-size:22px;font-weight:900;
+  color:var(--navy);letter-spacing:.01em}
+.menu .m-price em{font-style:normal;font-family:var(--sans);font-size:12px;
+  font-weight:700;margin-left:2px}
+
+.note{font-size:12.5px;line-height:1.95;color:var(--ink-soft);
+  padding-top:16px;border-top:1px solid var(--line)}
+.note b{color:var(--midori);font-weight:700}
+
+/* 通常清掃：見積もり */
+.quote-price{padding:14px 0 16px;margin-bottom:18px;
+  border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
+.quote-price b{display:block;font-family:var(--serif);font-size:26px;
+  font-weight:900;color:var(--midori);letter-spacing:.08em}
+.quote-price span{display:block;font-size:12.5px;color:var(--ink-soft);
+  margin-top:2px}
+.quote-body p{font-size:14px;color:var(--ink-soft);margin-bottom:14px}
+.quote-body p:last-child{margin-bottom:22px}
+
+/* 傍点：和文本来の強調 */
+.bo{font-style:normal;color:var(--ink);
+  -webkit-text-emphasis:filled dot currentColor;
+          text-emphasis:filled dot currentColor;
+  -webkit-text-emphasis-position:over right;
+          text-emphasis-position:over right}
+@supports not (text-emphasis:filled dot){
+  .bo{border-bottom:1px solid var(--tanpopo);padding-bottom:.08em}
+}
+
+.price-foot{text-align:center;font-size:13px;color:var(--ink-soft);
+  margin-top:30px}
+
 /* ---------- 信頼の土台（帯） ---------- */
 .trust{position:relative;z-index:1;margin:56px 0;
   background:var(--midori);color:#f4ead6;border-radius:26px;
@@ -238,6 +291,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
     <div class="brand">たんぽぽ庵<small>TANPOPO-AN</small></div>
     <ul class="links">
       <li><a href="#pillars">サービス</a></li>
+      <li><a href="#price">料金</a></li>
       <li><a href="#trust">経歴</a></li>
       <li><a href="#story">思い</a></li>
       <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
@@ -280,11 +334,12 @@ footer .meta b{color:#f4ead6;font-weight:500}
           <li>バスルーム・トイレ・キッチンの水回り</li>
           <li>リネン交換・アメニティ補充・ベッドメイク</li>
           <li>チェックアウト後のターンオーバー清掃</li>
+          <li>浴室・レンジフードなどの徹底清掃（1箇所から）</li>
           <li>最大3名まで同行可（豪州で組んだパートナー＋育成中の1名）。私が必ず現場にいます</li>
         </ul>
-        <div class="price"><b>5,000円</b><span>／ お試し1回（まずは私が1人で伺います）</span></div>
+        <div class="price"><b>5,000円〜</b><span>／ 1箇所・1回のご依頼から承ります</span></div>
         <p class="area">長野市から車で伺える範囲　｜　1回のご利用も、定期清掃も承ります</p>
-        <a class="go" href="#contact">清掃について相談する →</a>
+        <a class="go" href="#price">料金を見る →</a>
         <div class="watermark">✦</div>
       </div>
 
@@ -307,6 +362,97 @@ footer .meta b{color:#f4ead6;font-weight:500}
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="price-sec" id="price">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="en">PRICE</div>
+      <div class="jp">料金のこと</div>
+    </div>
+
+    <p class="price-lede reveal">
+      お掃除には、性質のちがう二つがあります。<br>
+      <b>貯まった汚れを、一度に落とす</b>お掃除と、<br>
+      <b>汚れを貯めずに、その時の綺麗を保つ</b>お掃除です。<br>
+      料金の決め方も違うので、分けてご案内しています。
+    </p>
+
+    <div class="two">
+
+      <!-- 徹底清掃 -->
+      <div class="card card--fixed reveal">
+        <span class="tag">一度に、落とす</span>
+        <h3>徹底清掃</h3>
+        <p class="sub">長年手が届かなかった場所を、分解と洗剤の力で元に戻します。年に一度か二度で十分です。</p>
+
+        <ul class="menu">
+          <li>
+            <span class="m-name">浴室</span>
+            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+          </li>
+          <li>
+            <span class="m-name">キッチン</span>
+            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+          </li>
+          <li>
+            <span class="m-name">レンジフード<small>家庭用サイズ</small></span>
+            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+          </li>
+          <li>
+            <span class="m-name">トイレ</span>
+            <span class="m-fig"><span class="m-market">相場 8,250円</span><span class="m-price">5,500<em>円</em></span></span>
+          </li>
+          <li>
+            <span class="m-name">洗面所</span>
+            <span class="m-fig"><span class="m-market">相場 8,250円</span><span class="m-price">5,500<em>円</em></span></span>
+          </li>
+        </ul>
+
+        <p class="note">
+          表示は税込です。「相場」は大手クリーニング会社が公表している料金で、たんぽぽ庵はいずれもその約3割引きです。<br>
+          業務用の大型レンジフードは、現地を拝見してお見積もりします。<br>
+          <b>ご依頼は5,000円から</b>承ります（お伺いにかかる分がありますので、2箇所以上をまとめていただけると助かります）。
+        </p>
+        <div class="watermark">✦</div>
+      </div>
+
+      <!-- 通常清掃 -->
+      <div class="card card--quote reveal">
+        <span class="tag">貯めずに、保つ</span>
+        <h3>通常清掃</h3>
+        <p class="sub">チェックアウトからチェックインまでのターンオーバーと、共用部のお掃除。お客様をお迎えするたびに必要になるお掃除です。</p>
+
+        <div class="quote-price">
+          <b>お見積もり</b>
+          <span>宿ごとに、一緒に決めさせてください</span>
+        </div>
+
+        <div class="quote-body">
+          <p>この清掃だけは、決まった料金表をお出ししていません。お部屋の広さも、宿泊料も、動くお部屋の数も、宿ごとにまるで違うからです。</p>
+          <p>ただ、ひとつ気をつけていることがあります。清掃の費用が宿泊料に対して<em class="bo">重くなりすぎれば、お宿が続けられません</em>。かといって安すぎれば、私たちが続けられません。</p>
+          <p>そのうえで、お互いが続けやすい線を、数字を見ながら一緒に決めさせてください。長くお付き合いできる形にしたいと思っています。</p>
+        </div>
+
+        <ul>
+          <li>客室のターンオーバー（ベッドメイク・リネン交換・水回り・床）</li>
+          <li>共用部（廊下・洗面・トイレ・浴室・キッチン）</li>
+          <li>1回だけのご依頼でも、定期でもお受けします</li>
+          <li>こちらも5,000円から承ります</li>
+        </ul>
+
+        <a class="go" href="#contact">料金について相談する →</a>
+        <div class="watermark">✦</div>
+      </div>
+
+    </div>
+
+    <p class="price-foot reveal">
+      長野市から車で伺える範囲でお受けしています。<br>
+      「これはいくらになりますか」だけのお問い合わせも歓迎です。
+    </p>
   </div>
 </section>
 
