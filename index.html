@@ -281,6 +281,35 @@ footer .meta b{color:#f4ead6;font-weight:500}
   transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+.contact-form { max-width: 520px; margin: 2em auto 0; text-align: left; }
+.contact-form label {
+  display: block; margin-top: 1.4em; margin-bottom: .4em;
+  font-family: var(--serif); font-size: .95rem;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: .7em .8em;
+  border: 1px solid #ccc; border-radius: 4px;
+  font-size: 16px; font-family: inherit;
+  box-sizing: border-box;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none; border-color: var(--midori);
+}
+.req {
+  background: var(--tanpopo); color: #333;
+  font-size: .7rem; padding: .15em .5em;
+  border-radius: 3px; margin-left: .5em;
+  vertical-align: middle;
+}
+.contact-form button {
+  margin-top: 1.8em; width: 100%;
+  padding: .9em; border: none; border-radius: 4px;
+  background: var(--midori); color: #fff;
+  font-size: 1rem; font-family: var(--serif);
+  cursor: pointer;
+}
+.contact-form button:hover { opacity: .85; }
+.form-note { font-size: .85rem; color: #666; margin-top: 1.2em; line-height: 1.7; }
 </style>
 </head>
 <body>
