@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>お問い合わせありがとうございました｜たんぽぽ庵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midori:#2D5F3F;
+  --midori-deep:#234a31;
+  --tanpopo:#E8B844;
+  --tanpopo-soft:#f0cf7e;
+  --washi:#FAF3E6;
+  --washi-card:#fffdf8;
+  --ink:#3a3733;
+  --ink-soft:#6f6a60;
+  --line:#e3d7bf;
+  --shadow:0 14px 40px -18px rgba(60,45,20,.35);
+  --serif:"Zen Old Mincho",serif;
+  --sans:"Zen Kaku Gothic New",sans-serif;
+  --maru:"Zen Maru Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--washi);
+  line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+.fluff{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fluff span{position:absolute;color:var(--tanpopo);opacity:.22;font-size:20px;
+  animation:drift linear infinite}
+@keyframes drift{
+  0%{transform:translateY(-10vh) translateX(0) rotate(0);opacity:0}
+  10%{opacity:.22}
+  90%{opacity:.22}
+  100%{transform:translateY(110vh) translateX(40px) rotate(220deg);opacity:0}
+}
+@media(prefers-reduced-motion:reduce){.fluff{display:none}}
+
+header{position:relative;z-index:50;background:rgba(250,243,230,.82);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;height:64px;
+  max-width:1080px;margin:0 auto;padding:0 24px}
+.brand{font-family:var(--serif);font-weight:700;font-size:24px;
+  color:var(--midori);letter-spacing:.06em}
+.brand small{font-family:var(--maru);font-weight:500;font-size:11px;
+  color:var(--ink-soft);letter-spacing:.18em;display:block;margin-top:-2px}
+
+main{position:relative;z-index:1;flex:1;display:grid;place-items:center;
+  padding:60px 24px}
+.thanks-box{background:var(--washi-card);border:1px solid var(--line);
+  border-radius:26px;box-shadow:var(--shadow);
+  max-width:640px;width:100%;padding:56px 44px 48px;text-align:center}
+.thanks-mark{font-size:44px;color:var(--tanpopo);line-height:1;margin-bottom:20px}
+.thanks-box h1{font-family:var(--serif);font-weight:900;color:var(--midori);
+  font-size:clamp(24px,4vw,32px);line-height:1.6;letter-spacing:.03em;
+  margin-bottom:24px}
+.thanks-box p{font-size:15px;color:var(--ink-soft);margin-bottom:16px}
+.thanks-box p.strong{color:var(--ink)}
+.thanks-note{margin-top:32px;padding-top:24px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-soft);line-height:2}
+.thanks-note b{color:var(--midori);font-weight:700}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:32px;
+  background:var(--midori);color:#fff;font-weight:700;font-size:15px;
+  padding:13px 30px;border-radius:999px;transition:.2s}
+.back:hover{background:var(--midori-deep)}
+
+footer{position:relative;z-index:1;background:var(--midori-deep);color:#e6dcc8;
+  padding:32px 24px 36px;text-align:center}
+footer .fbrand{font-family:var(--serif);font-size:20px;color:#fff;
+  font-weight:700;letter-spacing:.08em;margin-bottom:10px}
+footer .meta{font-size:12.5px;line-height:2;color:#c9bfa8}
+footer .meta b{color:#f4ead6;font-weight:500}
+@media(max-width:600px){.thanks-box{padding:40px 26px 36px}}
+</style>
+</head>
+<body>
+
+<div class="fluff" id="fluff" aria-hidden="true"></div>
+
+<header>
+  <div class="nav">
+    <a href="/"><div class="brand">たんぽぽ庵<small>TANPOPO-AN</small></div></a>
+  </div>
+</header>
+
+<main>
+  <div class="thanks-box">
+    <div class="thanks-mark">✿</div>
+    <h1>お問い合わせ、<br>ありがとうございました。</h1>
+    <p class="strong">内容を確かに受け取りました。</p>
+    <p>原則24時間以内に、ご記入いただいたメールアドレス宛にご返信いたします。</p>
+    <p>日中は現場に出ていることが多く、夕方以降のご返信になる場合がございます。少しお時間をいただけますと幸いです。</p>
+
+    <div class="thanks-note">
+      三日たっても返信が届かない場合は、迷惑メールフォルダをご確認ください。<br>
+      それでも見当たらないときは、お手数ですが直接ご連絡ください。<br>
+      <b>070-9180-3150</b>　／　<b>tampopoyado@gmail.com</b>
+    </div>
+
+    <a class="back" href="/">トップページへ戻る →</a>
+  </div>
+</main>
+
+<footer>
+  <div class="fbrand">たんぽぽ庵</div>
+  <div class="meta">
+    宿の清掃・Airbnb運営代行（長野市から車で伺える範囲）　／　リスティング作成（全国）<br>
+    <b>山崎 洋平</b>（やまざき ようへい）　｜　長野県長野市稲里町中氷鉋 1056-2
+  </div>
+</footer>
+
+<script>
+(function(){
+  const box=document.getElementById('fluff');
+  const glyphs=['❀','✿','❁','✾'];
+  const N=window.innerWidth<640?7:12;
+  for(let i=0;i<N;i++){
+    const s=document.createElement('span');
+    s.textContent=glyphs[i%glyphs.length];
+    s.style.left=Math.random()*100+'vw';
+    s.style.fontSize=(12+Math.random()*16)+'px';
+    s.style.animationDuration=(14+Math.random()*16)+'s';
+    s.style.animationDelay=(-Math.random()*20)+'s';
+    box.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>
