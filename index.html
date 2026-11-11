@@ -64,6 +64,9 @@ header{position:sticky;top:0;z-index:50;
 .nav a{color:var(--ink-soft);transition:color .2s;padding:4px 0;
   border-bottom:2px solid transparent}
 .nav a:hover{color:var(--midori)}
+.nav a[aria-current="page"]{color:var(--midori);font-weight:700;
+  border-bottom-color:var(--tanpopo)}
+.nav a.nav-cta[aria-current="page"]{border-bottom-color:transparent}
 .nav-cta{background:var(--midori);color:#fff!important;padding:8px 18px;
   border-radius:999px;font-weight:700}
 .nav-cta:hover{background:var(--midori-deep)}
@@ -468,6 +471,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
   <div class="wrap nav">
     <div class="brand">たんぽぽ庵<small>TANPOPO-AN</small></div>
     <ul class="links">
+      <li><a href="index.html" aria-current="page">トップ</a></li>
       <li><a href="housecleaning.html">年末大掃除</a></li>
       <li><a href="minpaku-cleaning.html">民泊清掃</a></li>
       <li><a href="kaketsuke.html">駆けつけ・ゴミ出し</a></li>
