@@ -4,8 +4,8 @@
 <meta name="google-site-verification" content="qoVNxd4DfmBizIimEKgVbTIYn8EXd05UOYTaPxvwoD4" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>長野市のハウスクリーニング・民泊清掃｜たんぽぽ庵</title>
-<meta name="description" content="長野市のハウスクリーニング・民泊清掃。浴室クリーニング・キッチン・レンジフード掃除は各12,000円（税込）、トイレ・洗面所は5,500円。大手の約3割引きです。1箇所1回のご依頼から、宿の定期清掃・ターンオーバーまで。ホテルニューオータニ仕込み、豪州で300件以上の実績。Airbnb運営代行・リスティング作成も。">
+<title>年末の大掃除 受付中｜長野市のハウスクリーニング・民泊清掃 たんぽぽ庵</title>
+<meta name="description" content="長野市のハウスクリーニング・民泊清掃。年末の大掃除は浴室15,000円・換気扇12,000円（税込）、11月30日までのご予約で1箇所につき1,000円引き。作業日は12月でも大丈夫です。1箇所1回のご依頼から、宿の定期清掃・ターンオーバーまで。ホテルニューオータニ仕込み、豪州で300件以上の実績。賠償責任保険加入。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
@@ -69,8 +69,55 @@ header{position:sticky;top:0;z-index:50;
 .nav-cta:hover{background:var(--midori-deep)}
 @media(max-width:900px){.nav ul.links{display:none}}
 
+/* ---------- 年末大掃除の告知帯 ---------- */
+.promo{position:relative;z-index:1;padding:26px 0 6px}
+.promo-box{background:var(--washi-card);border:2px solid var(--midori);
+  border-radius:22px;padding:30px 30px 26px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.promo-lbl{display:inline-block;font-family:var(--maru);font-weight:700;
+  font-size:12px;letter-spacing:.14em;background:var(--midori);color:#fff;
+  padding:5px 16px;border-radius:999px;margin-bottom:14px}
+.promo-ttl{font-family:var(--serif);font-weight:900;color:var(--midori);
+  font-size:clamp(22px,3.2vw,29px);line-height:1.5;letter-spacing:.02em;
+  margin-bottom:12px}
+.promo-sub{font-size:14.5px;color:var(--ink-soft);margin-bottom:8px}
+.promo-sub b{color:var(--midori);font-weight:700}
+.promo-deal{background:var(--washi-2);border-radius:12px;padding:12px 16px;
+  font-size:13.5px;color:var(--ink);margin-bottom:20px;line-height:1.8}
+.promo-deal b{color:var(--midori-deep);font-weight:700}
+.promo-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.promo-btn{display:inline-flex;align-items:center;gap:8px;background:var(--midori);
+  color:#fff;font-weight:700;font-size:15px;padding:13px 26px;
+  border-radius:999px;transition:.2s}
+.promo-btn:hover{background:var(--midori-deep)}
+.promo-tel{display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--serif);font-weight:900;font-size:21px;color:var(--navy);
+  border:1px solid var(--line);background:var(--washi);
+  padding:10px 20px;border-radius:999px;letter-spacing:.02em;transition:.2s}
+.promo-tel:hover{border-color:var(--tanpopo)}
+.promo-price{list-style:none}
+.promo-price li{display:flex;align-items:flex-start;justify-content:space-between;
+  gap:14px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.promo-price li:first-child{border-top:1px dashed var(--line)}
+.pp-name{font-size:14.5px;font-weight:500;color:var(--ink);line-height:1.7}
+.pp-name small{display:block;font-size:11.5px;color:var(--ink-soft);
+  font-weight:400;line-height:1.7}
+.pp-fig{text-align:right;white-space:nowrap;line-height:1.3}
+.pp-fig b{font-family:var(--serif);font-size:23px;font-weight:900;
+  color:var(--navy);letter-spacing:.01em}
+.pp-fig b em{font-style:normal;font-family:var(--sans);font-size:12px;
+  font-weight:700;margin-left:2px}
+.pp-fig small{display:block;font-size:11px;color:var(--ink-soft);margin-top:3px}
+.promo-foot{font-size:12px;color:var(--ink-soft);margin-top:12px;line-height:1.85}
+@media(max-width:860px){
+  .promo-box{grid-template-columns:1fr;gap:22px;padding:26px 22px 24px}
+  .promo-tel{font-size:19px}
+  .promo-cta{flex-direction:column;align-items:stretch}
+  .promo-btn,.promo-tel{justify-content:center}
+}
+
 /* ---------- ヒーロー ---------- */
-.hero{position:relative;z-index:1;padding:70px 0 40px}
+.hero{position:relative;z-index:1;padding:50px 0 40px}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
 .eyebrow{font-family:var(--maru);color:var(--tanpopo);font-weight:700;
   font-size:13px;letter-spacing:.22em;margin-bottom:18px}
@@ -153,19 +200,26 @@ header{position:sticky;top:0;z-index:50;
 
 /* 徹底清掃：料金表 */
 .menu{list-style:none;margin:0 0 20px}
-.menu li{display:flex;align-items:baseline;justify-content:space-between;
+.menu li{display:flex;align-items:flex-start;justify-content:space-between;
   gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
 .menu li:first-child{border-top:1px dashed var(--line)}
-.menu .m-name{font-size:15px;font-weight:500;color:var(--ink)}
+.menu .m-name{font-size:15px;font-weight:500;color:var(--ink);line-height:1.7}
 .menu .m-name small{display:block;font-size:11.5px;color:var(--ink-soft);
-  font-weight:400;letter-spacing:.06em;margin-top:-4px}
-.menu .m-fig{display:flex;align-items:baseline;gap:12px;white-space:nowrap}
-.menu .m-market{font-size:12px;color:#a9a094;text-decoration:line-through;
-  text-decoration-thickness:1px}
+  font-weight:400;letter-spacing:.04em;line-height:1.7}
+.menu .m-fig{text-align:right;white-space:nowrap;line-height:1.3}
 .menu .m-price{font-family:var(--serif);font-size:22px;font-weight:900;
   color:var(--navy);letter-spacing:.01em}
 .menu .m-price em{font-style:normal;font-family:var(--sans);font-size:12px;
   font-weight:700;margin-left:2px}
+.menu .m-dec{display:block;font-size:11px;color:var(--ink-soft);margin-top:3px}
+
+.price-head{display:flex;justify-content:flex-end;gap:10px;
+  font-size:11.5px;color:var(--ink-soft);margin-bottom:2px}
+.price-head span{font-family:var(--maru);font-weight:700;letter-spacing:.06em}
+
+.deal-band{background:var(--washi-2);border-radius:12px;padding:13px 16px;
+  font-size:13.5px;line-height:1.85;color:var(--ink);margin:0 0 18px}
+.deal-band b{color:var(--midori-deep);font-weight:700}
 
 .note{font-size:12.5px;line-height:1.95;color:var(--ink-soft);
   padding-top:16px;border-top:1px solid var(--line)}
@@ -336,8 +390,8 @@ footer .meta b{color:#f4ead6;font-weight:500}
 <link rel="canonical" href="https://tampopoan.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="たんぽぽ庵">
-<meta property="og:title" content="長野市のハウスクリーニング・民泊清掃｜たんぽぽ庵">
-<meta property="og:description" content="長野市のハウスクリーニング・民泊清掃。浴室・キッチン・レンジフードは各12,000円（税込）、トイレ・洗面所は5,500円。1箇所1回のご依頼から、宿のターンオーバー清掃・駆けつけ・ゴミ出しまで。">
+<meta property="og:title" content="年末の大掃除 受付中｜長野市のハウスクリーニング・民泊清掃 たんぽぽ庵">
+<meta property="og:description" content="年末の大掃除は浴室15,000円・換気扇12,000円（税込）。11月30日までのご予約で1箇所につき1,000円引き。作業日は12月でも大丈夫です。長野市のハウスクリーニング・民泊清掃、1箇所1回のご依頼から承ります。">
 <meta property="og:url" content="https://tampopoan.com/">
 <meta property="og:image" content="https://tampopoan.com/images/mascot.png">
 <meta property="og:locale" content="ja_JP">
@@ -355,7 +409,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
   "telephone": "+81-70-9180-3150",
   "email": "tampopoyado@gmail.com",
   "image": "https://tampopoan.com/images/mascot.png",
-  "priceRange": "¥5,000〜",
+  "priceRange": "¥3,000〜",
   "founder": { "@type": "Person", "name": "山崎 洋平" },
   "address": {
     "@type": "PostalAddress",
@@ -383,18 +437,24 @@ footer .meta b{color:#f4ead6;font-weight:500}
     "@type": "OfferCatalog",
     "name": "料金",
     "itemListElement": [
-      { "@type": "Offer", "priceCurrency": "JPY", "price": "12000",
+      { "@type": "Offer", "priceCurrency": "JPY", "price": "15000",
+        "validThrough": "2026-11-30",
         "itemOffered": { "@type": "Service", "name": "浴室クリーニング" } },
       { "@type": "Offer", "priceCurrency": "JPY", "price": "12000",
-        "itemOffered": { "@type": "Service", "name": "キッチンクリーニング" } },
+        "validThrough": "2026-11-30",
+        "itemOffered": { "@type": "Service", "name": "換気扇・レンジフードクリーニング" } },
       { "@type": "Offer", "priceCurrency": "JPY", "price": "12000",
-        "itemOffered": { "@type": "Service", "name": "レンジフードクリーニング" } },
-      { "@type": "Offer", "priceCurrency": "JPY", "price": "5500",
-        "itemOffered": { "@type": "Service", "name": "トイレクリーニング" } },
-      { "@type": "Offer", "priceCurrency": "JPY", "price": "5500",
-        "itemOffered": { "@type": "Service", "name": "洗面所クリーニング" } },
-      { "@type": "Offer", "priceCurrency": "JPY", "price": "5000",
-        "itemOffered": { "@type": "Service", "name": "民泊ターンオーバー清掃" } }
+        "validThrough": "2026-11-30",
+        "itemOffered": { "@type": "Service", "name": "小さい箇所のクリーニング 2箇所（トイレ・洗面所・魚焼きグリル・オーブン）" } },
+      { "@type": "Offer", "priceCurrency": "JPY", "price": "7000",
+        "itemOffered": { "@type": "Service", "name": "小さい箇所のクリーニング 1箇所（トイレ・洗面所・魚焼きグリル・オーブン）" } },
+      { "@type": "Offer", "priceCurrency": "JPY",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "3000", "priceCurrency": "JPY",
+          "unitCode": "HUR", "unitText": "1時間"
+        },
+        "itemOffered": { "@type": "Service", "name": "民泊・簡易宿所の清掃（ターンオーバー）" } }
     ]
   }
 }
@@ -408,14 +468,59 @@ footer .meta b{color:#f4ead6;font-weight:500}
   <div class="wrap nav">
     <div class="brand">たんぽぽ庵<small>TANPOPO-AN</small></div>
     <ul class="links">
+      <li><a href="housecleaning.html">年末大掃除</a></li>
       <li><a href="minpaku-cleaning.html">民泊清掃</a></li>
       <li><a href="kaketsuke.html">駆けつけ・ゴミ出し</a></li>
-      <li><a href="housecleaning.html">ハウスクリーニング</a></li>
       <li><a href="remote-owner.html">県外オーナー様へ</a></li>
       <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
     </ul>
   </div>
 </header>
+
+<!-- 年末大掃除の告知帯（チラシからお越しの方への受け皿） -->
+<section class="promo" id="promo">
+  <div class="wrap">
+    <div class="promo-box reveal">
+      <div>
+        <span class="promo-lbl">ただいまご予約受付中</span>
+        <h2 class="promo-ttl">年末前の大掃除、<br>一番大変なところを<br>お任せください。</h2>
+        <p class="promo-sub">浴室・換気扇・水回りを、プロが一日で。長野市稲里町で、個人で営んでいる清掃業者です。</p>
+        <div class="promo-deal">
+          <b>11月30日までにご予約いただくと、1箇所につき1,000円お安くなります。</b><br>
+          作業日は12月でも大丈夫です。12月はご希望の日が埋まりやすいので、お早めにどうぞ。
+        </div>
+        <div class="promo-cta">
+          <a class="promo-btn" href="housecleaning.html">大掃除のくわしい案内 →</a>
+          <a class="promo-tel" href="tel:07091803150">☎ 070-9180-3150</a>
+        </div>
+      </div>
+      <div>
+        <ul class="promo-price">
+          <li>
+            <span class="pp-name">浴室</span>
+            <span class="pp-fig"><b>15,000<em>円</em></b><small>12月のご予約 16,000円</small></span>
+          </li>
+          <li>
+            <span class="pp-name">換気扇（レンジフード）</span>
+            <span class="pp-fig"><b>12,000<em>円</em></b><small>12月のご予約 13,000円</small></span>
+          </li>
+          <li>
+            <span class="pp-name">小さい箇所から2つ<small>トイレ・洗面所・魚焼きグリル・オーブン</small></span>
+            <span class="pp-fig"><b>12,000<em>円</em></b><small>12月のご予約 13,000円</small></span>
+          </li>
+          <li>
+            <span class="pp-name">小さい箇所を1つだけ</span>
+            <span class="pp-fig"><b>7,000<em>円</em></b><small>税込</small></span>
+          </li>
+        </ul>
+        <p class="promo-foot">
+          表示はすべて税込です。対応エリアは長野市内。<br>
+          汚れの状態や、製造から10年以上たった設備については、事前にご相談させていただく場合があります。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ヒーロー -->
 <section class="hero">
@@ -455,8 +560,8 @@ footer .meta b{color:#f4ead6;font-weight:500}
           <li>浴室・レンジフードなどの徹底清掃（1箇所から）</li>
           <li>最大3名まで同行可（豪州で組んだパートナー＋育成中の1名）。私が必ず現場にいます</li>
         </ul>
-        <div class="price"><b>5,000円〜</b><span>／ 1箇所・1回のご依頼から承ります</span></div>
-        <p class="area">長野市から車で伺える範囲　｜　1回のご利用も、定期清掃も承ります</p>
+        <div class="price"><b>1時間 3,000円</b><span>／ 民泊・簡易宿所の清掃（税込）</span></div>
+        <p class="area">浴室などの徹底清掃は、箇所ごとの料金で7,000円から　｜　お見積りは無料です</p>
         <a class="go" href="#price">料金を見る →</a>
         <div class="watermark">✦</div>
       </div>
@@ -465,16 +570,16 @@ footer .meta b{color:#f4ead6;font-weight:500}
       <div class="card card--bnb reveal" id="bnb">
         <span class="tag">Airbnb 運営・作成</span>
         <h3>Airbnbのことは、<br>まるごとお任せを。</h3>
-        <p class="sub">掲載ページ作成から、日々の運営代行まで。</p>
+        <p class="sub">ゲスト対応から、リネンと備品の管理まで。</p>
         <ul>
-          <li>リスティング作成（タイトル・紹介文・写真の並べ方）</li>
-          <li>↑は後払いでOK。ご満足いただけなければ料金は不要です</li>
-          <li>日本語・英語の両方に対応</li>
+          <li>ベッドメイクとリネン交換。洗濯・乾燥・予備の確保まで含めて回します</li>
+          <li>アメニティと消耗品の在庫管理。半分を下回ったら補充します</li>
           <li>ゲスト対応・予約管理・価格調整の代行</li>
+          <li>日本語・英語の両方に対応</li>
           <li>毎月の運営レポートで、売上を透明に</li>
         </ul>
-        <div class="price"><b>3,980円</b><span>／ リスティング作成・一棟（全国対応）</span></div>
-        <p class="area">運営代行は手数料20%のみ・長野市から車で伺える範囲　｜　満足いただけなければ料金は不要</p>
+        <div class="price"><b>手数料 20%</b><span>／ 宿泊売上に対して・これ以外はいただきません</span></div>
+        <p class="area">長野市から車で伺える範囲　｜　お見積りは無料です</p>
         <a class="go" href="#contact">Airbnbについて相談する →</a>
         <div class="watermark">✦</div>
       </div>
@@ -506,32 +611,34 @@ footer .meta b{color:#f4ead6;font-weight:500}
         <h3>徹底清掃</h3>
         <p class="sub">長年手が届かなかった場所を、分解と洗剤の力で元に戻します。年に一度か二度で十分です。</p>
 
+        <div class="price-head"><span>11月中のご予約</span></div>
         <ul class="menu">
           <li>
             <span class="m-name">浴室</span>
-            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+            <span class="m-fig"><span class="m-price">15,000<em>円</em></span><span class="m-dec">12月のご予約 16,000円</span></span>
           </li>
           <li>
-            <span class="m-name">キッチン</span>
-            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+            <span class="m-name">換気扇（レンジフード）<small>家庭用サイズ</small></span>
+            <span class="m-fig"><span class="m-price">12,000<em>円</em></span><span class="m-dec">12月のご予約 13,000円</span></span>
           </li>
           <li>
-            <span class="m-name">レンジフード<small>家庭用サイズ</small></span>
-            <span class="m-fig"><span class="m-market">相場 17,900円</span><span class="m-price">12,000<em>円</em></span></span>
+            <span class="m-name">小さい箇所から2つ<small>トイレ・洗面所・魚焼きグリル・オーブン</small></span>
+            <span class="m-fig"><span class="m-price">12,000<em>円</em></span><span class="m-dec">12月のご予約 13,000円</span></span>
           </li>
           <li>
-            <span class="m-name">トイレ</span>
-            <span class="m-fig"><span class="m-market">相場 8,250円</span><span class="m-price">5,500<em>円</em></span></span>
-          </li>
-          <li>
-            <span class="m-name">洗面所</span>
-            <span class="m-fig"><span class="m-market">相場 8,250円</span><span class="m-price">5,500<em>円</em></span></span>
+            <span class="m-name">小さい箇所を1つだけ</span>
+            <span class="m-fig"><span class="m-price">7,000<em>円</em></span><span class="m-dec">税込</span></span>
           </li>
         </ul>
 
+        <div class="deal-band">
+          <b>11月30日までのご予約で、1箇所につき1,000円引き。</b><br>
+          作業日は12月でも大丈夫です。12月はご希望の日が埋まりやすいので、お早めにどうぞ。
+        </div>
+
         <p class="note">
-          表示は税込です。「相場」は大手クリーニング会社が公表している料金で、たんぽぽ庵はいずれもその約3割引きです。<br>
-          業務用の大型レンジフードは、現地を拝見してお見積もりします。
+          表示は税込です。業務用の大型レンジフードは、現地を拝見してお見積もりします。<br>
+          仕上がりにご納得いただけない箇所があれば、その場でやり直します。立ち会いも歓迎します。賠償責任保険に加入しています。
         </p>
         <div class="watermark">✦</div>
       </div>
@@ -543,21 +650,21 @@ footer .meta b{color:#f4ead6;font-weight:500}
         <p class="sub">チェックアウトからチェックインまでのターンオーバーと、共用部のお掃除。お客様をお迎えするたびに必要になるお掃除です。</p>
 
         <div class="quote-price">
-          <b>お見積もり</b>
-          <span>宿ごとに、一緒に決めさせてください</span>
+          <b>1時間 3,000円</b>
+          <span>税込　｜　お見積りは無料です</span>
         </div>
 
         <div class="quote-body">
-          <p>この清掃だけは、決まった料金表をお出ししていません。お部屋の広さも、宿泊料も、動くお部屋の数も、宿ごとにまるで違うからです。</p>
-          <p>ただ、ひとつ気をつけていることがあります。清掃の費用が宿泊料に対して<em class="bo">重くなりすぎれば、お宿が続けられません</em>。かといって安すぎれば、私たちが続けられません。</p>
-          <p>そのうえで、お互いが続けやすい線を、数字を見ながら一緒に決めさせてください。長くお付き合いできる形にしたいと思っています。</p>
+          <p>この清掃は、箇所ごとではなく時間で承っています。お部屋の広さも、動くお部屋の数も、宿ごとにまるで違うからです。一度現地を拝見して、1回あたりどのくらいかかるかをお出しします。</p>
+          <p>ひとつ気をつけていることがあります。清掃の費用が宿泊料に対して<em class="bo">重くなりすぎれば、お宿が続けられません</em>。かといって安すぎれば、私たちが続けられません。</p>
+          <p>お互いが続けやすい形を、数字を見ながら一緒に決めさせてください。長くお付き合いできる関係にしたいと思っています。</p>
         </div>
 
         <ul>
           <li>客室のターンオーバー（ベッドメイク・リネン交換・水回り・床）</li>
           <li>共用部（廊下・洗面・トイレ・浴室・キッチン）</li>
           <li>1回だけのご依頼でも、定期でもお受けします</li>
-          <li>最低5,000円から承ります</li>
+          <li>お見積りは無料。現地を拝見してからお出しします</li>
         </ul>
 
         <a class="go" href="#contact">料金について相談する →</a>
@@ -569,7 +676,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
     <p class="price-foot reveal">
       長野市から車で伺える範囲でお受けしています。<br>
       民泊・簡易宿所のターンオーバー清掃から、浴室・レンジフードのハウスクリーニングまで。<br>
-      <a href="minpaku-cleaning.html" class="foot-link">民泊清掃</a>・<a href="kaketsuke.html" class="foot-link">駆けつけとゴミ出し</a>・<a href="housecleaning.html" class="foot-link">ハウスクリーニング</a>は、それぞれのページに詳しく書いています。<br>
+      <a href="housecleaning.html" class="foot-link">ハウスクリーニング</a>・<a href="minpaku-cleaning.html" class="foot-link">民泊清掃</a>・<a href="kaketsuke.html" class="foot-link">駆けつけとゴミ出し</a>は、それぞれのページに詳しく書いています。<br>
       「これはいくらになりますか」だけのお問い合わせも歓迎です。
     </p>
 
@@ -606,6 +713,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
     </div>
     <div class="creds">
       <span class="reveal">長野市出身・地元で長く</span>
+      <span class="reveal">賠償責任保険に加入</span>
       <span class="reveal">英語対応可</span>
       <span class="reveal">豪州で事業を立ち上げ、売却まで完遂</span>
     </div>
@@ -623,7 +731,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
       <div class="step reveal">
         <div class="no">01</div>
         <h4>ホテルの「あたりまえ」を、手で覚えた。</h4>
-        <p>ニューオータニ（★5）でハウスキーピングに従事。宿の評価が伸びない最大の原因は清掃です。そこを、頭ではなく手で覚えた基準で妥協しません。</p>
+        <p>ホテルニューオータニ（5つ星ホテル）でハウスキーピングに従事。宿の評価が伸びない最大の原因は清掃です。そこを、頭ではなく手で覚えた基準で妥協しません。</p>
       </div>
       <div class="step reveal">
         <div class="no">02</div>
@@ -659,7 +767,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
       <div class="en">GET IN TOUCH</div>
       <div class="jp">お問い合わせ</div>
     </div>
-    <p class="invite reveal">どこからでも、お気軽に。「ちょっと聞いてみたい」だけでも歓迎です。</p>
+    <p class="invite reveal">どこからでも、お気軽に。「ちょっと聞いてみたい」だけでも歓迎です。<br>年末の大掃除は、お電話が一番早くつながります。</p>
     <div class="methods">
       <a class="method reveal" href="tel:07091803150">
         <div class="ic">☎</div>
@@ -690,7 +798,7 @@ footer .meta b{color:#f4ead6;font-weight:500}
 
   <label for="message">ご相談内容 <span class="req">必須</span></label>
   <textarea id="message" name="ご相談内容" rows="6" required
-    placeholder="施設の場所、清掃をご希望の箇所、ご希望の時期など、分かる範囲でお書きください。"></textarea>
+    placeholder="ご住所のエリア、清掃をご希望の箇所、ご希望の時期など、分かる範囲でお書きください。"></textarea>
 
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_subject" value="【たんぽぽ庵】サイトからお問い合わせ">
@@ -721,13 +829,13 @@ footer .meta b{color:#f4ead6;font-weight:500}
     <div class="fbrand">たんぽぽ庵</div>
     <div class="tag">― 長野の静かな暮らしに、そっと寄り添う宿を。 ―</div>
         <nav style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;font-size:13px;margin-bottom:18px">
+      <a href="housecleaning.html" style="color:#e6dcc8">ハウスクリーニング</a>
       <a href="minpaku-cleaning.html" style="color:#e6dcc8">民泊清掃</a>
       <a href="kaketsuke.html" style="color:#e6dcc8">駆けつけ・ゴミ出し</a>
-      <a href="housecleaning.html" style="color:#e6dcc8">ハウスクリーニング</a>
       <a href="remote-owner.html" style="color:#e6dcc8">県外オーナー様へ</a>
     </nav>
     <div class="meta">
-      宿の清掃・Airbnb運営代行（長野市から車で伺える範囲）　／　リスティング作成（全国）<br>
+      宿の清掃・Airbnb運営代行・駆けつけ代行（長野市から車で伺える範囲）<br>
       <b>山崎 洋平</b>（やまざき ようへい）　｜　長野県長野市稲里町中氷鉋
     </div>
   </div>
